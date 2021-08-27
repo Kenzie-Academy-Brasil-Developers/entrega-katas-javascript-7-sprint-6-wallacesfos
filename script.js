@@ -92,41 +92,40 @@ function newFindIndex(array, cond, valor) {
     for(let i = 0; i < array.length; i++) {
         if(cond == '>'){
             if(array[i] > valor){
-                return array[i]
+                return i
             }
         }else if(cond == '>='){
             if(array[i] >= valor){
-                return array[i]
+                return i
             }
         }else if(cond == '<='){
             if(array[i] <= valor){
-                return array[i]
+                return i
             }
         }else if(cond == '<'){
             if(array[i] < valor){
-                return array[i]
+                return i
             }
         }else if(cond == '!='){
             if(array[i] != valor){
-                return array[i]
+                return i
             }
         }else if(cond == '=='){
             if(array[i] == valor){
-                return array[i]
+                return i
             }
         }else if(cond == '==='){
             if(array[i] === valor){
-                return array[i]
+                return i
             }
         }else if(cond == '!=='){
             if(array[i] !== valor){
-                return array[i]
+                return i
             }
         }
     }
     return -1
 }
-
 
 
 function newFilter(array, cond, valor) {
